@@ -27,15 +27,6 @@ form {
 .searchButton {
   margin-right: 5%;
 }
-.inactive {
-  color: rgb(18, 18, 169);
-  cursor: default;
-}
-
-.inactive:hover {
-  color: rgb(18, 18, 169);
-  text-decoration: none;
-}
 
 .column-3 {
   line-height: 40px;
@@ -46,13 +37,17 @@ form {
   color: rgb(178, 65, 193);
   padding-top: 5%;
 }
+
 .unit {
+  font-size: 20px;
   font-weight: 500;
   position: relative;
   top: -40px;
   padding-top: 10px;
 }
-
+.unit a {
+  text-decoration: none;
+}
 .icon-weather {
   width: 45px;
 }
@@ -67,19 +62,24 @@ form {
 }
 
 .description {
-  font-size: 15px;
+  font-size: 18px;
   position: relative;
-  top: -20px;
+  top: -30px;
 }
 
 @media (max-width: 750px) {
   .column-3 li {
     display: inline;
     margin-right: 5%;
-    font-size: small;
   }
   .column-1 img {
     width: 50%;
     height: 50%;
+  }
+  .column-2 {
+    padding-bottom: 30px;
+  }
+  .description {
+    top: -60px;
   }
 }
