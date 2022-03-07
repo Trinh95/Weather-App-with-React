@@ -14,5 +14,12 @@
   box-shadow: 5px 5px 15px #d9edfd;
   max-width: 700px;
   margin: 40px auto;
-  padding: 40px 40px 20px 40px;
+  padding: 40px;
+}
+
+@media (max-width: 560) {
+  .App {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }

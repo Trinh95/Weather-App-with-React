@@ -29,22 +29,22 @@ export default function Weather() {
   return (
     <div className="Weather">
       <form onSubmit={handleSubmit}>
-        <div className="row align-items-center">
-          <input
-            type="text"
-            autoComplete="off"
-            placeholder="Enter a city"
-            className="col-sm-6 form-control cityInput"
-            onChange={detectCity}
-          />
-          <input
-            type="submit"
-            className="col-sm-1 btn btn-primary searchButton"
-            value="Search"
-          />
-          <button className="col-sm-1 btn btn-outline-success locationButton text-center">
-            📍
-          </button>
+        <div className="d-flex justify-content-center">
+          <div className="cityInput">
+            <input
+              type="text"
+              autoComplete="off"
+              placeholder="Enter a city"
+              className="form-control"
+              onChange={detectCity}
+            />
+          </div>
+          <div className="searchButton">
+            <input type="submit" className="btn btn-primary" value="Search" />
+          </div>
+          <div className="locationButton">
+            <button className="btn btn-outline-success">📍</button>
+          </div>
         </div>
       </form>
 
