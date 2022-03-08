@@ -17,7 +17,7 @@ export default function Weather(props) {
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
       feelLike: response.data.main.feels_like,
-      iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
     });
   }
 
@@ -59,6 +59,6 @@ export default function Weather(props) {
   } else {
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=5d3b346f3e3af0daf6465f0d5ed890f4`;
     axios.get(apiUrl).then(displayForecast);
-    return `I love you`;
+    return `Loading...`;
   }
 }
