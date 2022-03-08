@@ -70,7 +70,7 @@ export default function Weather(props) {
             </div>
             <div className="locationButton">
               <button className="btn btn-outline-success" onClick={searchCity}>
-                📍
+                <i class="fa-solid fa-location-dot"></i>
               </button>
             </div>
           </div>
