@@ -5,14 +5,14 @@ import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherData(props) {
   return (
-    <div class="props.data">
-      <h1 class="text-uppercase">{props.data.cityName}</h1>
+    <div className="WeatherData">
+      <h1 className="text-uppercase">{props.data.cityName}</h1>
       <h5>
         <FormatedDate />
       </h5>
       <div className="row first-row align-items-center">
         <ul className="col-md-4 column-1 text-center">
-          <WeatherIcon name={props.data.icon} />
+          <WeatherIcon code={props.data.icon} alt={props.data.description} />
           <br />
           <strong className="description text-capitalize">
             {props.data.description}
