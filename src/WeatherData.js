@@ -28,7 +28,7 @@ export default function WeatherData(props) {
             <span className="unit float-left">°C </span>
           </li>
         </ul>
-        <ul className="col-md-4 float-left column-3">
+        <ul className="col-md-4 column-3">
           <li>
             <strong>Feels like: </strong>
             {Math.round(props.data.feelLike)}°C

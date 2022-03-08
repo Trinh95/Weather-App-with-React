@@ -60,8 +60,13 @@ form {
 }
 
 @media (max-width: 750px) {
+  .column-3 {
+    line-height: normal;
+    text-align: center;
+    padding-bottom: 20px;
+  }
   .column-3 li {
-    display: inline;
+    display: inline-block;
     margin-right: 5%;
   }
   .column-1 img {
@@ -69,9 +74,9 @@ form {
     height: 50%;
   }
   .column-2 {
-    padding-bottom: 30px;
+    padding-bottom: 10px;
   }
   .description {
-    top: -60px;
+    top: -40px;
   }
 }
