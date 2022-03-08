@@ -5,3 +5,11 @@
 .min-temp {
   opacity: 0.5;
 }
+
+.weatherDaily:hover {
+  border-radius: 5px;
+  background-color: rgb(229, 229, 250, 0.6);
+
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
