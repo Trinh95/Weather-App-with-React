@@ -1,7 +1,7 @@
 import React from "react";
 import FormatedDate from "./FormatedDate";
-import WeatherTemperature from "./WeatherTemperature";
 import WeatherIcon from "./WeatherIcon";
+import "./Weather.css";
 
 export default function WeatherData(props) {
   return (
@@ -12,7 +12,11 @@ export default function WeatherData(props) {
       </h5>
       <div className="row first-row align-items-center">
         <ul className="col-md-4 column-1 text-center">
-          <WeatherIcon code={props.data.icon} alt={props.data.description} />
+          <WeatherIcon
+            code={props.data.icon}
+            alt={props.data.description}
+            className="mainIcon"
+          />
           <br />
           <strong className="description text-capitalize">
             {props.data.description}
@@ -20,10 +24,11 @@ export default function WeatherData(props) {
         </ul>
         <ul className="col-md-4 column-2 text-center">
           <li>
-            <WeatherTemperature Ctemp={props.data.temp} />
+            <span className="temperature">{Math.round(props.data.temp)}</span>
+            <span className="unit float-left">°C </span>
           </li>
         </ul>
-        <ul className="col-md-4 text-center column-3">
+        <ul className="col-md-4 float-left column-3">
           <li>
             <strong>Feels like: </strong>
             {Math.round(props.data.feelLike)}°C

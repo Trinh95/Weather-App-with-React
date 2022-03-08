@@ -20,66 +20,65 @@ import d50 from "./icons/d50.svg";
 import "./Weather.css";
 
 export default function WeatherIcon(props) {
-  console.log(props.code);
   if (props.code === "01n") {
-    return <img src={n01} alt={props.alt} className="mainIcon" />;
+    return <img src={n01} alt={props.alt} className={props.className} />;
   }
   if (props.code === "01d") {
-    return <img src={d01} alt={props.alt} className="mainIcon" />;
+    return <img src={d01} alt={props.alt} className={props.className} />;
   }
   if (props.code === "02n") {
-    return <img src={n02} alt={props.alt} className="mainIcon" />;
+    return <img src={n02} alt={props.alt} className={props.className} />;
   }
   if (props.code === "02d") {
-    return <img src={d02} alt={props.alt} className="mainIcon" />;
+    return <img src={d02} alt={props.alt} className={props.className} />;
   }
   if (props.code === "03n") {
-    return <img src={n03} alt={props.alt} className="mainIcon" />;
+    return <img src={n03} alt={props.alt} className={props.className} />;
   }
   if (props.code === "03d") {
-    return <img src={d03} alt={props.alt} className="mainIcon" />;
+    return <img src={d03} alt={props.alt} className={props.className} />;
   }
   if (props.code === "04n") {
-    return <img src={n04} alt={props.alt} className="mainIcon" />;
+    return <img src={n04} alt={props.alt} className={props.className} />;
   }
   if (props.code === "04d") {
-    return <img src={d04} alt={props.alt} className="mainIcon" />;
+    return <img src={d04} alt={props.alt} className={props.className} />;
   }
   if (props.code === "04n") {
-    return <img src={n04} alt={props.alt} className="mainIcon" />;
+    return <img src={n04} alt={props.alt} className={props.className} />;
   }
   if (props.code === "04d") {
-    return <img src={d04} alt={props.alt} className="mainIcon" />;
+    return <img src={d04} alt={props.alt} className={props.className} />;
   }
   if (props.code === "09n") {
-    return <img src={n09} alt={props.alt} className="mainIcon" />;
+    return <img src={n09} alt={props.alt} className={props.className} />;
   }
   if (props.code === "09d") {
-    return <img src={d09} alt={props.alt} className="mainIcon" />;
+    return <img src={d09} alt={props.alt} className={props.className} />;
   }
   if (props.code === "10n") {
-    return <img src={n10} alt={props.alt} className="mainIcon" />;
+    return <img src={n10} alt={props.alt} className={props.className} />;
   }
   if (props.code === "10d") {
-    return <img src={d10} alt={props.alt} className="mainIcon" />;
+    return <img src={d10} alt={props.alt} className={props.className} />;
   }
   if (props.code === "11n") {
-    return <img src={n11} alt={props.alt} className="mainIcon" />;
+    return <img src={n11} alt={props.alt} className={props.className} />;
   }
   if (props.code === "11d") {
-    return <img src={d11} alt={props.alt} className="mainIcon" />;
+    return <img src={d11} alt={props.alt} className={props.className} />;
   }
   if (props.code === "13n") {
-    return <img src={n13} alt={props.alt} className="mainIcon" />;
+    return <img src={n13} alt={props.alt} className={props.className} />;
   }
   if (props.code === "13d") {
-    return <img src={d13} alt={props.alt} className="mainIcon" />;
+    return <img src={d13} alt={props.alt} className={props.className} />;
   }
   if (props.code === "50n") {
-    return <img src={n50} alt={props.alt} className="mainIcon" />;
+    return <img src={n50} alt={props.alt} className={props.className} />;
   }
   if (props.code === "50d") {
-    return <img src={d50} alt={props.alt} className="mainIcon" />;
+    return <img src={d50} alt={props.alt} className={props.className} />;
   } else {
     return null;
   }
